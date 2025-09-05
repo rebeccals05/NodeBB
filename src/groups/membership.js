@@ -130,7 +130,6 @@ module.exports = function (Groups) {
 	};
 
 	Groups.isMemberOfGroupsList = async function (uid, groupListKeys) {
-		console.log('REBECCA_STAMM - isMemberOfGroupsList');
 		const members = await getGroupNames(groupListKeys);
 		
 		let uniqueGroups = _.uniq(_.flatten(members));
